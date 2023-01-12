@@ -1,0 +1,183 @@
+/* RESETS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* CUSTOM STYLES */
+.spotify-header {
+  background-color: #191414;
+}
+
+.container-fluid h2,
+.container-fluid input,
+.container-fluid button {
+  width: 100%;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.container-fluid h2 {
+  font-size: 16px;
+}
+
+.form-inline {
+  flex: none;
+}
+
+.search-button {
+  height: 35px;
+  border-radius: 15px;
+  background-color: #1db954;
+}
+
+input {
+  height: 35px;
+  padding: 8px;
+  border-radius: 15px;
+  border-color: #d3d3d3;
+  border-width: 1.5px;
+}
+
+.form-input {
+  font-size: 14px;
+  padding-left: 13px;
+}
+
+.clear-button {
+  height: 35px;
+  border-radius: 15px;
+}
+
+.artist-search,
+.artist-heading,
+.qr-span {
+  text-transform: capitalize;
+}
+
+.artist-history {
+  height: 35px;
+  border-radius: 15px;
+  text-transform: capitalize;
+}
+
+.artist-genre {
+  font-size: 23px;
+  text-transform: capitalize;
+}
+/*  Applies grid to jumbotron*/
+.jumbotron {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 10px;
+}
+
+.display-artist {
+  margin-left: 30px;
+}
+
+.artist-image {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.qr-image {
+  margin-top: 80px;
+}
+
+.qr-text {
+  font-size: 18px;
+}
+
+.display-songs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 10px;
+}
+.card {
+  flex: 1;
+}
+
+.song-card {
+  background-repeat: no-repeat;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-body .btn {
+  margin-bottom: 15px;
+  height: 35px;
+  border-radius: 15px;
+  font-size: 15px;
+  min-width: 145px;
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+  .jumbotron {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    column-gap: 10px;
+  }
+
+  .qr-image {
+    margin-top: 5px;
+  }
+  .display-songs {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 0px;
+    column-gap: 10px;
+  }
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media (max-width: 768px) {
+  /* Styles */
+  /* This will hide the search history in mobile mode */
+  #search-history,
+  .clear-button {
+    display: none;
+  }
+  .jumbotron {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    column-gap: 10px;
+  }
+  .display-artist {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .qr-image {
+    margin-top: 5px;
+  }
+  .display-songs {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 0px;
+    column-gap: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
